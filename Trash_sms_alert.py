@@ -13,6 +13,7 @@ while True:
         resp = sms.send_sms('Smart Garbage Alert: '+str(garbage_value))
         print('Response received from Twilio is: '+str(resp))
         print('Status of SMS at Twilio is: '+str(resp.status))
+    
     if(garbage_value == 'Wet Bin is Full!'):
         print(garbage_value)
         resp = sms.send_sms('Smart Garbage Alert: '+str(garbage_value))
